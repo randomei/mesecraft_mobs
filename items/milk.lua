@@ -1,7 +1,7 @@
 local S = minetest.get_translator(minetest.get_current_modname())
 
 -- Bucket of Milk
-minetest.register_craftitem("mesecraft_mobs:milk_bucket", {
+minetest.register_craftitem("mobs:bucket_milk", {
         description = S"Bucket of Milk",
         inventory_image = "mesecraft_mobs_items_milk_bucket.png",
         stack_max = 1,
@@ -10,7 +10,7 @@ minetest.register_craftitem("mesecraft_mobs:milk_bucket", {
 })
 
 -- Glass of Milk
-minetest.register_craftitem("mesecraft_mobs:milk_glass", {
+minetest.register_craftitem("mobs:glass_milk", {
         description = S"Glass of Milk",
         inventory_image = "mesecraft_mobs_items_milk_glass.png",
         on_use = minetest.item_eat(2, 'vessels:drinking_glass'),
@@ -20,24 +20,24 @@ minetest.register_craftitem("mesecraft_mobs:milk_glass", {
 -- 4 glasses + milk bucket --> 4 milk glasses.
 minetest.register_craft({
         type = "shapeless",
-        output = "mesecraft_mobs:milk_glass 4",
+        output = "mobs:glass_milk 4",
         recipe = {
                 'vessels:drinking_glass', 'vessels:drinking_glass',
                 'vessels:drinking_glass', 'vessels:drinking_glass',
-                'mesecraft_mobs:milk_bucket'
+                'mobs:bucket_milk'
         },
-        replacements = { {"mesecraft_mobs:milk_bucket", "bucket:bucket_empty"} }
+        replacements = { {"mobs:bucket_milk", "bucket:bucket_empty"} }
 })
 
 -- Glasses of Milk --> Milk Bucket.
 minetest.register_craft({
         type = "shapeless",
-        output = "mesecraft_mobs:milk_bucket",
+        output = "mobs:bucket_milk",
         recipe = {
-                'mesecraft_mobs:milk_glass', 'mesecraft_mobs:milk_glass',
-                'mesecraft_mobs:milk_glass', 'mesecraft_mobs:milk_glass',
+                'mobs:glass_milk', 'mobs:glass_milk',
+                'mobs:glass_milk', 'mobs:glass_milk',
                 'bucket:bucket_empty'
         },
-        replacements = { {"mesecraft_mobs:milk_glass", "vessels:drinking_glass 4"} }
+        replacements = { {"mobs:glass_milk", "vessels:drinking_glass 4"} }
 })
 

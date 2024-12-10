@@ -1,7 +1,7 @@
 local S = minetest.get_translator(minetest.get_current_modname())
 
 -- raw meat from mobs_redo
-minetest.register_craftitem("mesecraft_mobs:meat", {
+minetest.register_craftitem("mobs:meat", {
 	description = S("Meat"),
 	inventory_image = "mesecraft_mobs_items_meat.png",
 	on_use = minetest.item_eat(3),
@@ -9,7 +9,7 @@ minetest.register_craftitem("mesecraft_mobs:meat", {
 })
 
 -- cooked meat from mobs_redo
-minetest.register_craftitem("mesecraft_mobs:meat_cooked", {
+minetest.register_craftitem("mobs:meat_cooked", {
 	description = S("Cooked Meat"),
 	inventory_image = "mesecraft_mobs_items_meat_cooked.png",
 	on_use = minetest.item_eat(8),
@@ -18,7 +18,7 @@ minetest.register_craftitem("mesecraft_mobs:meat_cooked", {
 
 minetest.register_craft({
 	type = "cooking",
-	output = "mesecraft_mobs:meat_cooked",
-	recipe = "mesecraft_mobs:meat",
+	output = "mobs:meat_cooked",
+	recipe = "mobs:meat",
 	cooktime = 5
 })

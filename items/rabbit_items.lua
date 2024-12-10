@@ -36,7 +36,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-        output = "mesecraft_mobs:leather",
+        output = "mobs:leather",
         type = "shapeless",
         recipe = {
                 "mesecraft_mobs:rabbit_hide", "mesecraft_mobs:rabbit_hide",

@@ -12,9 +12,9 @@ minetest.register_craftitem("mesecraft_mobs:cheese", {
 minetest.register_craft({
         type = "cooking",
         output = "mesecraft_mobs:cheese",
-        recipe = "mesecraft_mobs:milk_bucket",
+        recipe = "mobs:bucket_milk",
         cooktime = 5,
-        replacements = {{ "mesecraft_mobs:milk_bucket", "bucket:bucket_empty"}}
+        replacements = {{ "mobs:bucket_milk", "bucket:bucket_empty"}}
 })
 
 -- Cheese Block

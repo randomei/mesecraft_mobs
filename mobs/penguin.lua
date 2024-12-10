@@ -24,7 +24,7 @@ mobs:register_mob("mesecraft_mobs:penguin", {
 	jump = false,
 	stepheight = 1.1,
 	drops = {
-		{name = "mesecraft_mobs:meat", chance = 1, min = 1, max = 1},
+		{name = "mobs:meat", chance = 1, min = 1, max = 1},
 	},
 	water_damage = 0,
 	lava_damage = 4,

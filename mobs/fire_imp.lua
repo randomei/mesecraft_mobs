@@ -43,9 +43,9 @@ mobs:register_mob("mesecraft_mobs:fire_imp", {
                 death = "mesecraft_mobs_fire_imp_death",
    },
    drops = {
-      {name = "mesecraft_mobs:meat", chance = 1, min = 1, max = 2}, 
-      {name = "mesecraft_mobs:leather", chance =1, min = 1, max = 1},
-      {name = "mesecraft_mobs:bone", chance = 1, min = 1, max = 3},
+      {name = "mobs:meat", chance = 1, min = 1, max = 2}, 
+      {name = "mobs:leather", chance =1, min = 1, max = 1},
+      {name = "bonemeal:bone", chance = 1, min = 1, max = 3},
    },
    water_damage = 0,
    lava_damage = 0,

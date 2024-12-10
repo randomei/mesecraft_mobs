@@ -31,7 +31,7 @@ mobs:register_mob("mesecraft_mobs:pinky", {
                 death = "mesecraft_mobs_pinky_death",
    },
    drops = {
-      {name = "mesecraft_mobs:meat", chance = 2, min = 2, max = 3},
+      {name = "mobs:meat", chance = 2, min = 2, max = 3},
       {name = "mesecraft_mobs:bone", chance = 1, min = 1, max = 5},
    },
    water_damage = 0,

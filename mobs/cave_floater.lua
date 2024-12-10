@@ -1,7 +1,7 @@
 -- BY FREEGAMERS.ORG
 -- CAVE FLOATER,INSPIRED BY DF
 -- ASSETS FROM D00MED'S HORROR PACK MOGALL
--- (TODO: MAKE POSIONOUS GAS) Reference NSSM:venomous_gas and df_caverbs mine_gas:gas, drops mesecraft_mobs:leather
+-- (TODO: MAKE POSIONOUS GAS) Reference NSSM:venomous_gas and df_caverbs mine_gas:gas, drops mobs:leather
 
 mobs:register_mob("mesecraft_mobs:cave_floater", {
    type = "animal",

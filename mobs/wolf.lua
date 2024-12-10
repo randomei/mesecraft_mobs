@@ -41,7 +41,7 @@ mobs:register_mob("mesecraft_mobs:wolf", {
 		local tool = clicker:get_wielded_item()
 
 		local dog, ent
-		if tool:get_name() == "mesecraft_mobs:bone" then
+		if tool:get_name() == "bonemeal:bone" then
 
 			if not minetest.settings:get_bool("creative_mode") then
 				tool:take_item()

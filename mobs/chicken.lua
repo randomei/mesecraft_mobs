@@ -64,7 +64,7 @@ mobs:register_mob("mesecraft_mobs:chicken", {
 
                 local pos = self.object:get_pos()
 
-                minetest.add_item(pos, "mesecraft_mobs:egg")
+                minetest.add_item(pos, "mobs:egg")
 
                 minetest.sound_play("mesecraft_mobs_chicken_eggpop", {
                         pos = pos,

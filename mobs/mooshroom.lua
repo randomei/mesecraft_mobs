@@ -11,8 +11,8 @@ mobs:register_mob("mesecraft_mobs:mooshroom", {
         makes_footstep_sound = true,
         walk_velocity = 1,
         drops = {
-                {name = "mesecraft_mobs:meat", chance = 1, min = 1, max = 3,},
-                {name = "mesecraft_mobs:leather",chance = 1,min = 0,max = 2,},
+                {name = "mobs:meat", chance = 1, min = 1, max = 3,},
+                {name = "mobs:leather",chance = 1,min = 0,max = 2,},
         },
         water_damage = 1,
         lava_damage = 5,
@@ -60,8 +60,8 @@ mobs:register_mob("mesecraft_mobs:mooshroom", {
                         local inv = clicker:get_inventory()
                         inv:remove_item("main", "bucket:bucket_empty")
                         -- If room, add milk to inventory, otherwise drop as item
-                        if inv:room_for_item("main", {name= "mesecraft_mobs:milk_bucket"}) then
-                                clicker:get_inventory():add_item("main", "mesecraft_mobs:milk_bucket")
+                        if inv:room_for_item("main", {name= "mobs:bucket_milk"}) then
+                                clicker:get_inventory():add_item("main", "mobs:bucket_milk")
                                 local pos = self.object:get_pos()
                                 minetest.sound_play("mesecraft_mobs_cow_milk", {
                                 pos = pos,
@@ -72,7 +72,7 @@ mobs:register_mob("mesecraft_mobs:mooshroom", {
                         else
                                 local pos = self.object:get_pos()
                                 pos.y = pos.y + 0.5
-                                minetest.add_item(pos, {name = "mesecraft_mobs:milk_bucket"})
+                                minetest.add_item(pos, {name = "mobs:bucket_milk"})
                                 minetest.sound_play("mesecraft_mobs_cow_milk", {
                                 pos = pos,
                                 gain = 1.0,

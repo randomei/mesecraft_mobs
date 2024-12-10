@@ -49,7 +49,7 @@ local ocelot = {
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
-	follow = {"mesecraft_mobs:milk_bucket", "mesecraft_mobs:milk_glass", "mesecraft_mobs:chicken_raw", "mesecraft_mobs:chicken_cooked", "mesecraft_mobs:cod_raw", "mesecraft_mobs:cod_cooked", "mesecraft_mobs:clownfish_raw", "mesecraft_mobs:clownfish_cooked", "mesecraft_mobs:rabbit_raw", "mesecraft_mobs:rabbit_cooked", "mesecraft_mobs:salmon_raw", "mesecraft_mobs:salmon_cooked",},
+	follow = {"mobs:bucket_milk", "mobs:glass_milk", "mesecraft_mobs:chicken_raw", "mesecraft_mobs:chicken_cooked", "mesecraft_mobs:cod_raw", "mesecraft_mobs:cod_cooked", "mesecraft_mobs:clownfish_raw", "mesecraft_mobs:clownfish_cooked", "mesecraft_mobs:rabbit_raw", "mesecraft_mobs:rabbit_cooked", "mesecraft_mobs:salmon_raw", "mesecraft_mobs:salmon_cooked",},
 	view_range = 12,
 	passive = true,
 	attack_type = "dogfight",

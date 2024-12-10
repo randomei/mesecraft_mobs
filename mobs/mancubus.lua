@@ -31,7 +31,7 @@ mobs:register_mob("mesecraft_mobs:mancubus", {
                 death = "doom_mancubus_death",
    },
    drops = {
-      {name = "mesecraft_mobs:meat", chance = 1, min = 1, max = 5},
+      {name = "mobs:meat", chance = 1, min = 1, max = 5},
       {name = "bweapons_hitech_pack:missile", chance = 1, min = 1, max = 6},
    },
    water_damage = 0,

@@ -33,7 +33,7 @@ stepheight = 0.6,
 	follow = {"ethereal:bamboo"},
 	view_range = 8,
 	drops = {
-		{name = "mesecraft_mobs:meat", chance = 1, min = 1, max = 2},
+		{name = "mobs:meat", chance = 1, min = 1, max = 2},
 	},
 	water_damage = 0,
 	lava_damage = 5,

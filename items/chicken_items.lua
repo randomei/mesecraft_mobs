@@ -1,7 +1,7 @@
 local S = minetest.get_translator(minetest.get_current_modname())
 
 -- Register Chicken Egg
-minetest.register_node("mesecraft_mobs:egg", {
+minetest.register_node("mobs:egg", {
         description = S"Chicken Egg",
         tiles = {"mesecraft_mobs_items_chicken_egg.png"},
         inventory_image  = "mesecraft_mobs_items_chicken_egg.png",
@@ -19,7 +19,7 @@ minetest.register_node("mesecraft_mobs:egg", {
         groups = {food_egg = 1, snappy = 2, dig_immediate = 3},
         after_place_node = function(pos, placer, itemstack)
                 if placer:is_player() then
-                        minetest.set_node(pos, {name = "mesecraft_mobs:egg", param2 = 1})
+                        minetest.set_node(pos, {name = "mobs:egg", param2 = 1})
                 end
         end,
 })
@@ -33,7 +33,7 @@ minetest.register_craftitem("mesecraft_mobs:chicken_egg_fried", {
 -- Recipe for fried egg.
 minetest.register_craft({
         type  =  "cooking",
-        recipe  = "mesecraft_mobs:egg",
+        recipe  = "mobs:egg",
         output = "mesecraft_mobs:chicken_egg_fried",
 })
 -- Register raw chicken.

@@ -13,7 +13,7 @@ mobs:register_mob("mesecraft_mobs:deer", {
         walk_velocity = 1,
         armor = 200,
         drops = {
-                {name = "mesecraft_mobs:meat",
+                {name = "mobs:meat",
                 chance = 1,
                 min = 2,
                 max = 3,},

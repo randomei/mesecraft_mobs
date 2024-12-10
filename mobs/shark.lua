@@ -43,7 +43,7 @@ mobs:register_mob("mesecraft_mobs:shark", {
 	jump = false,
 	stepheight = 0.1,
 	drops = {
-		{name = "mesecraft_mobs:meat", chance = 1, min = 1, max = 3},
+		{name = "mobs:meat", chance = 1, min = 1, max = 3},
 	},
 })			
 --name, nodes, neighbours, minlight, maxlight, interval, chance, active_object_count, min_height, max_height

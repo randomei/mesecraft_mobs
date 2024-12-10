@@ -34,8 +34,8 @@ mobs:register_mob("mesecraft_mobs:kangaroo", {
 		random = "mesecraft_mobs_kangaroo",
 	},
 	drops = {
-		{name = "mesecraft_mobs:meat", chance = 1, min = 6, max = 9},
-		{name = "mesecraft_mobs:leather", chance = 1, min = 2, max = 3},
+		{name = "mobs:meat", chance = 1, min = 6, max = 9},
+		{name = "mobs:leather", chance = 1, min = 2, max = 3},
 		{name = "mesecraft_mobs:bone", chance = 1, min = 1, max = 2},
 	},
 	visual = "mesh",

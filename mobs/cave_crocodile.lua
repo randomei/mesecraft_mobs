@@ -74,8 +74,8 @@ mobs:register_mob("mesecraft_mobs:cave_crocodile", {
 		jump = "mesecraft_mobs_crocodile_jump",
 	},
 	drops = {
-		{name = "mesecraft_mobs:meat", chance = 1, min = 1, max = 10},
-		{name = "mesecraft_mobs:leather",	chance = 1, min = 1, max = 10},
+		{name = "mobs:meat", chance = 1, min = 1, max = 10},
+		{name = "mobs:leather",	chance = 1, min = 1, max = 10},
 	},
 	visual = "mesh",
 	visual_size = {x=9, y=9},
